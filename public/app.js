@@ -8,7 +8,7 @@ socket.onmessage = (message) => {
   switch(data) {
     case 'update-users':
       let userListHTML = '';
-      for(const username of data?usernames) {
+      for(const username of data.........usernames) {
         userListHTML += `<div>${username}</div>`;
       }
       document.querySelector('#users').innerHTML = userListHTML;
